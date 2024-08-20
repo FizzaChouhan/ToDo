@@ -1,0 +1,41 @@
+body{
+   
+    background-image:url(images/hand-drawn-flat-groovy-psychedelic-background_23-2149078171.avif)
+     ;
+     background-repeat: no-repeat;
+     background-size: 100% ;
+}
+#hi{
+   font-weight: bolder;
+   background-color: purple;
+   padding: 10px;
+   color: white;
+
+}
+#btn{
+   border:5px solid #FB0293;
+    color:#FB0293 ;
+    font-size: larger;
+    font-weight: bold;
+}
+#modal{
+    background-color:transparent ;
+    
+}
+#heading{
+   color: #FB0293;
+}
+#color{
+  
+    border:10px solid #FB0293;
+    border-radius: 10px;
+}
+#bgc{
+    background: transparent;
+}
+#userInput{
+    border:5px solid #FB0293;
+}
+.color{
+    color: #FB0293;
+}
