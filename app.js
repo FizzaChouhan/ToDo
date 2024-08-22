@@ -1,12 +1,29 @@
+var list= document.getElementById("some")
 function addition() {
-   var list= document.getElementById("some")
+ 
    var data = document.getElementById("userInput")
    var li=document.createElement("li");
-   li.innerHTML=userInput.value
+   li.innerHTML=data.value
   list.appendChild(li)
-  console.log(li)
+ 
+  li.setAttribute("class", "color");
+  var checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  checkbox.setAttribute("onClick","line(this)")
+  li.appendChild(document.createTextNode(" "));
 
-  listItem.style.color = "pink"; 
-   
-   
+  
+  li.appendChild(checkbox);
+  
+ 
+  data.value=""
+    
+}
+function line(checkbox){
+  var li = checkbox.parentElement; 
+ if(checkbox.checked){
+  li.style.textDecoration="line-through";
+ }else{
+   li.style.textDecoration="none";
+ }
 }
