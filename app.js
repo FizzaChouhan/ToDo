@@ -27,3 +27,6 @@ function line(checkbox){
    li.style.textDecoration="none";
  }
 }
+function deleted(){
+  list.innerHTML=" "
+}
