@@ -7,12 +7,11 @@ function addition() {
   list.appendChild(li)
  
   li.setAttribute("class", "color");
-  var taskContent = document.createElement("div");
-  taskContent.className = "task-content";
+  
   var checkbox = document.createElement("input");
   checkbox.type = "checkbox";
   checkbox.setAttribute("onClick","line(this)")
-  li.appendChild(document.createTextNode(" "));
+  li.appendChild(checkbox);
 
   data.value=" "
   var dltbtn=document.createElement("button")
@@ -35,19 +34,20 @@ li.appendChild(checkbox);
   
     
 }
+
+function deleted(){
+  list.innerHTML=" "
+}
+
 function line(checkbox){
   var li = checkbox.parentElement; 
+ 
  if(checkbox.checked){
   li.style.textDecoration="line-through";
  }else{
    li.style.textDecoration="none";
  }
 }
-function deleted(){
-  list.innerHTML=" "
-}
-
-
 
     
 function removelist(event){
